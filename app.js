@@ -11,6 +11,10 @@
 
 //With react dom
 
+import React from "react";
+
+import  ReactDOM from "react-dom/client";
+
 const heading4 = React.createElement(
         
     "h4", 
