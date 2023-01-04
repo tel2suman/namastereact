@@ -15,53 +15,31 @@ import React from "react";
 
 import  ReactDOM from "react-dom/client";
 
-const heading4 = React.createElement(
-        
-    "h4", 
-        {
-            id: "title",
-        }, 
-        
-        "hello react js its heading 4"
+    //jsx
+
+    const heading4 = (
+        <h4 id="title" key="h4" className="container">
+            hello react js its heading 4
+        </h4>
     );
 
-    const heading5 = React.createElement(
-        
-    "h5",
+    //react component
 
-        {
-            id: "title",
-        }, 
-        
-        "hello react js its heading 5"
-    );
+    // functional component
 
-    const heading6 = React.createElement(
-        
-        "h6", 
-        
-            {
-                id: "title",
-            }, 
-            
-            "hello react js its heading 6"
+    const HeaderComponent = () => {
+        return (
+            <div className="container">
+            {heading4}
+                <h3>header functional component</h3>
+                <h5>hjhjkjkjllhjfdrdt</h5>
+            </div>
         );
-    
-
-    const container = React.createElement(
-        
-        "div",
-        
-        {
-            id: "container",
-        },
-            [heading4, heading5, heading6]
-
-        );
+    }
 
     console.log(heading4);
 
     const root = ReactDOM.createRoot(document.getElementById("root"));
 
-    root.render(container);
+    root.render(<HeaderComponent/>);
      
