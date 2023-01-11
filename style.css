@@ -1,3 +1,265 @@
-.container {
-    background-color: beige;
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
+
+
+.container {
+    max-width: 1140px;
+}
+
+
+.logo-image {
+    width: 14%;
+    float: left;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  width: 100%;
+  background-color: #faebd7;
+  border-top: 15px solid #7a990b;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  display: inline-block;
+  box-shadow: 15px 15px 20px 5px #696969;
+}
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    padding: 10px 0px;
+    font-size: 28px;
+    text-decoration: none;
+}
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    color: #fffaf0;
+    background-color: #7a990b;
+    border-radius: 16px;
+    margin: 0px 0px 0px;
+    padding: 12px;
+}
+
+
+.topnav a.active {
+    padding: 10px;
+}
+  
+  /* Hide the link that should open and close the topnav on small screens */
+
+  .topnav .search-container {
+    float: left;
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 17rem;
+}
+  
+.topnav input[type="text"] {
+    width: 82%;
+    border: none;
+    border-radius: 15px 0 0;
+    margin-top: 8px;
+    padding: 17px;
+    background: midnightblue;
+    font-size: 17px;
+}
+
+.topnav input::placeholder {
+    color: #fff;
+}
+  
+.topnav .search-container button {
+    cursor: pointer;
+    background: #ddd;
+    border: none;
+    border-radius: 0px 0 30px 0px;
+    margin-top: 8px;
+    margin-right: 16px;
+    padding: 17px;
+    font-size: 17px;
+}
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+
+  .bi bi-box-arrow-in-right {
+    padding: 12px;
+  }
+
+  .menu {
+    width: 70%;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 0px 30px;
+    list-style: none;
+    margin-left: 35px;
+    display: flex;
+}
+
+  .menu li {
+    transition: background-position-x 0.9s linear;
+    text-align: center;
+  }
+
+  .menu li a {
+    color: #7a990b;
+    text-transform: uppercase;
+    margin-right: 50px;
+    margin-left: 25px;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .45s;
+}
+
+  .menu li a:hover {
+    font-size: 22px;
+    text-decoration: none;
+    transition: all 0.45s;
+    animation: line 2s;
+    color: #0d0628;
+    border-bottom: 3px solid #7a990b;
+  }
+  
+  .login-btn {
+    float: right;
+    margin: 2rem 10px 10px;
+    
+}
+
+.login-btn a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 21px;
+  text-decoration: none;
+  display: block;
+}
+
+  .btn-login {
+    background-color: #7a990b; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px !important;
+    margin: 4px 2px;
+    border-radius: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+  .bi-cart {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .card {
+    width: 23%;
+    background-color: #faebd7;
+    margin-top: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+    transition: all .3s;
+    box-shadow: 0 4px 8px #0003;
+}
+  
+  .card-info {
+    padding: 15px;
+  }
+
+  .card-info h2 {
+    margin-bottom: 10px;
+  }
+
+  .card-info p {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .card > img {
+      width: 100%;
+  }
+  
+  .restaurant-list {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  @media screen and (max-width: 900px) and (min-width: 300px) {
+    .logo-image {
+        width: -webkit-fill-available;
+    }
+
+    .topnav {
+        width: 100%;
+        background-color: #faebd7;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .menu {
+      width: 100%;
+      padding-top: 20px;
+      margin: 12px auto;
+      list-style: none;
+      display: flex;
+  }
+
+    .menu li a {
+      color: #7a990b;
+      margin-right: 50px;
+      font-weight: 500;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all .45s;
+      text-transform: uppercase;
+  }
+
+  .menu li a:hover {
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.45s;
+    animation: line 2s;
+    color: #0d0628;
+    border-bottom: 3px solid #7a990b;
+  }
+
+    .topnav .search-container {
+        float: left;
+        width: 100%;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+    .topnav input[type="text"] {
+        width: 55%;
+        background: #191970;
+        border: none;
+        border-radius: 15px 0 0;
+        margin-top: 40px;
+        padding: 17px;
+        font-size: 17px;
+    }
+
+    .topnav a.active {
+        display: none;
+    }
+  }
