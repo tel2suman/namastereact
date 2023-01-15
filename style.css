@@ -54,30 +54,31 @@
   
   /* Hide the link that should open and close the topnav on small screens */
 
-  .topnav .search-container {
-    float: left;
+  .search-container {
     width: 40%;
+    margin: auto;
     margin-top: 2%;
-    margin-left: 17rem;
 }
   
-.topnav input[type="text"] {
+input[type="text"] {
     width: 82%;
     border: none;
     border-radius: 15px 0 0;
     margin-top: 8px;
     padding: 17px;
-    background: midnightblue;
+    background: #7a990b;
     font-size: 17px;
+    border: none;
+    color: #fff;
 }
 
-.topnav input::placeholder {
+input::placeholder {
     color: #fff;
 }
   
-.topnav .search-container button {
+.search-container button {
     cursor: pointer;
-    background: #ddd;
+    background: #faebd7;
     border: none;
     border-radius: 0px 0 30px 0px;
     margin-top: 8px;
