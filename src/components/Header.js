@@ -1,12 +1,16 @@
 
-
 import React from "react";
 
 import navlogo from "../../images/navbar-logo.png";
 
 import bootstrapicons from "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
+import { useState } from "react";
+
 const Header = () => {
+
+  const [title, setTitle] = useState("Login / Signup");
+
   return (
     <React.Fragment>
       <div className="topnav">
@@ -32,9 +36,10 @@ const Header = () => {
             </a>
           </ul>
           <div className="login-btn">
-            <a href="" className="btn btn-login">
-              Login or Signup
-            </a>
+            <button className="btn btn-login" onClick={()=>{
+              setTitle("Logout");
+            }}>{title}
+            </button>
           </div>
         </nav>
       </div>
