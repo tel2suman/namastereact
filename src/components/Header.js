@@ -9,7 +9,7 @@ import { useState } from "react";
 
 const Header = () => {
 
-  const [title, setTitle] = useState("Login / Signup");
+  const [loggedin, setLoggedin] = useState(false);
 
   return (
     <React.Fragment>
@@ -36,10 +36,10 @@ const Header = () => {
             </a>
           </ul>
           <div className="login-btn">
-            <button className="btn btn-login" onClick={()=>{
-              setTitle("Logout");
-            }}>{title}
-            </button>
+          { loggedin ?
+            <button className="btn btn-login" onClick={()=>{setLoggedin(false)}}>Logout</button> :
+            <button className="btn btn-login" onClick={()=>{setLoggedin(true)}}>Login / Signup</button>
+          }
           </div>
         </nav>
       </div>
