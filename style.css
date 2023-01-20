@@ -1,18 +1,18 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 
 .container {
-    max-width: 1140px;
+  max-width: 1140px;
 }
 
 
 .logo-image {
-    width: 14%;
-    float: left;
+  width: 14%;
+  float: left;
 }
 
 /* Add a black background color to the top navigation */
@@ -25,116 +25,116 @@
   display: inline-block;
   box-shadow: 15px 15px 20px 5px #696969;
 }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    padding: 10px 0px;
-    font-size: 28px;
-    text-decoration: none;
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  padding: 10px 0px;
+  font-size: 28px;
+  text-decoration: none;
 }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    color: black;
-  }
-  
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    color: #fffaf0;
-    background-color: #7a990b;
-    border-radius: 16px;
-    margin: 0px 0px 0px;
-    padding: 12px;
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: #fffaf0;
+  background-color: #7a990b;
+  border-radius: 16px;
+  margin: 0px 0px 0px;
+  padding: 12px;
 }
 
 
 .topnav a.active {
-    padding: 10px;
+  padding: 10px;
 }
-  
-  /* Hide the link that should open and close the topnav on small screens */
 
-  .search-container {
-    width: 40%;
-    margin: auto;
-    margin-top: 2%;
+/* Hide the link that should open and close the topnav on small screens */
+
+.search-container {
+  width: 40%;
+  margin: auto;
+  margin-top: 2%;
 }
-  
+
 input[type="text"] {
-    width: 82%;
-    border: none;
-    border-radius: 15px 0 0;
-    margin-top: 8px;
-    padding: 17px;
-    background: #7a990b;
-    font-size: 17px;
-    border: none;
-    color: #fff;
+  width: 82%;
+  border: none;
+  border-radius: 15px 0 0;
+  margin-top: 8px;
+  padding: 17px;
+  background: #7a990b;
+  font-size: 17px;
+  border: none;
+  color: #fff;
 }
 
 input::placeholder {
-    color: #fff;
+  color: #fff;
 }
-  
+
 .search-container button {
-    cursor: pointer;
-    background: #faebd7;
-    border: none;
-    border-radius: 0px 0 30px 0px;
-    margin-top: 8px;
-    margin-right: 16px;
-    padding: 17px;
-    font-size: 17px;
-}
-  
-  .topnav .search-container button:hover {
-    background: #ccc;
-  }
-
-  .bi bi-box-arrow-in-right {
-    padding: 12px;
-  }
-
-  .menu {
-    width: 70%;
-    float: left;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 0px 0px 30px;
-    list-style: none;
-    margin-left: 35px;
-    display: flex;
+  cursor: pointer;
+  background: #faebd7;
+  border: none;
+  border-radius: 0px 0 30px 0px;
+  margin-top: 8px;
+  margin-right: 16px;
+  padding: 17px;
+  font-size: 17px;
 }
 
-  .menu li {
-    transition: background-position-x 0.9s linear;
-    text-align: center;
-  }
-
-  .menu li a {
-    color: #7a990b;
-    text-transform: uppercase;
-    margin-right: 50px;
-    margin-left: 25px;
-    font-size: 22px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: all .45s;
+.topnav .search-container button:hover {
+  background: #ccc;
 }
 
-  .menu li a:hover {
-    font-size: 22px;
-    text-decoration: none;
-    transition: all 0.45s;
-    animation: line 2s;
-    color: #0d0628;
-    border-bottom: 3px solid #7a990b;
-  }
-  
-  .login-btn {
-    float: right;
-    margin: 2rem 10px 10px;
-    
+.bi bi-box-arrow-in-right {
+  padding: 12px;
+}
+
+.menu {
+  width: 70%;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px 0px 30px;
+  list-style: none;
+  margin-left: 35px;
+  display: flex;
+}
+
+.menu li {
+  transition: background-position-x 0.9s linear;
+  text-align: center;
+}
+
+.menu li a {
+  color: #7a990b;
+  text-transform: uppercase;
+  margin-right: 50px;
+  margin-left: 25px;
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .45s;
+}
+
+.menu li a:hover {
+  font-size: 22px;
+  text-decoration: none;
+  transition: all 0.45s;
+  animation: line 2s;
+  color: #0d0628;
+  border-bottom: 3px solid #7a990b;
+}
+
+.login-btn {
+  float: right;
+  margin: 2rem 10px 10px;
+
 }
 
 .login-btn button {
@@ -146,92 +146,210 @@ input::placeholder {
   display: block;
 }
 
-  .btn-login {
-    background-color: #7a990b; /* Green */
-    border: none;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px !important;
-    margin: 4px 2px;
-    border-radius: 16px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  }
-
-  .bi-cart {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .card {
-    width: 23%;
-    background-color: #faebd7;
-    margin-top: 40px;
-    margin-right: 15px;
-    margin-left: 15px;
-    transition: all .3s;
-    box-shadow: 0 4px 8px #0003;
+.btn-login {
+  background-color: #7a990b;
+  /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px !important;
+  margin: 4px 2px;
+  border-radius: 16px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-  
-  .card-info {
-    padding: 15px;
+
+.bi-cart {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card {
+  width: -webkit-fill-available;
+  background-color: #faebd7;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.card-info h2 {
+  margin-bottom: 10px;
+}
+
+.card-info p {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.restaurant-list a:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card>img {
+  width: 100%;
+}
+
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.restaurant-list a {
+  width: 23%;
+  background-color: #faebd7;
+  margin-top: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  transition: all .3s;
+  box-shadow: 0 4px 8px #0003;
+  text-decoration: none;
+  color: #0d0628;
+}
+
+.shimmer-card {
+  position: relative;
+  -webkit-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+  border-radius: 6px;
+  height: 350px;
+  overflow: hidden;
+  width: 23%;
+  margin: 40px auto;
+}
+
+.shimmerBG {
+  animation-duration: 2.2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: shimmer;
+  animation-timing-function: linear;
+  background: #ddd;
+  background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
+  background-size: 1200px 100%;
+}
+
+.menu-items{
+  display: flex;
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: -100% 0;
   }
 
-  .card-info h2 {
-    margin-bottom: 10px;
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1200px 0;
   }
 
-  .card-info p {
-    margin-bottom: 10px;
-    font-size: 13px;
+  100% {
+    background-position: 1200px 0;
+  }
+}
+
+.media {
+  height: 200px;
+}
+
+.p-32 {
+  padding: 32px;
+}
+
+.title-line {
+  height: 24px;
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 20px;
+}
+
+.content-line {
+  height: 16px;
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.end {
+  width: 40%;
+}
+
+.m-t-24 {
+  margin-top: 24px;
+}
+
+.main{
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.fof{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fof h1{
+  font-size: 50px;
+  display: inline-block;
+  padding-right: 12px;
+}
+
+.fof p{
+  font-size: 30px;
+  display: inline-block;
+  padding-right: 12px;
+  animation: type .5s alternate infinite;
+}
+
+@keyframes type{
+  from{box-shadow: inset -3px 0px 0px #888;}
+  to{box-shadow: inset -3px 0px 0px transparent;}
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 300px) {
+  .logo-image {
+    width: -webkit-fill-available;
   }
 
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  .topnav {
+    width: 100%;
+    background-color: #faebd7;
+    display: inline-block;
+    text-align: center;
   }
 
-  .card > img {
-      width: 100%;
-  }
-  
-  .restaurant-list {
-      display: flex;
-      flex-wrap: wrap;
-  }
-  
-  @media screen and (max-width: 900px) and (min-width: 300px) {
-    .logo-image {
-        width: -webkit-fill-available;
-    }
-
-    .topnav {
-        width: 100%;
-        background-color: #faebd7;
-        display: inline-block;
-        text-align: center;
-    }
-
-    .menu {
-      width: 100%;
-      padding-top: 20px;
-      margin: 12px auto;
-      list-style: none;
-      display: flex;
+  .menu {
+    width: 100%;
+    padding-top: 20px;
+    margin: 12px auto;
+    list-style: none;
+    display: flex;
   }
 
-    .menu li a {
-      color: #7a990b;
-      margin-right: 50px;
-      font-weight: 500;
-      font-size: 15px;
-      text-decoration: none;
-      transition: all .45s;
-      text-transform: uppercase;
+  .menu li a {
+    color: #7a990b;
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all .45s;
+    text-transform: uppercase;
   }
 
   .menu li a:hover {
@@ -243,24 +361,24 @@ input::placeholder {
     border-bottom: 3px solid #7a990b;
   }
 
-    .topnav .search-container {
-        float: left;
-        width: 100%;
-        margin-bottom: 40px;
-        margin-left: 0;
-    }
-
-    .topnav input[type="text"] {
-        width: 55%;
-        background: #191970;
-        border: none;
-        border-radius: 15px 0 0;
-        margin-top: 40px;
-        padding: 17px;
-        font-size: 17px;
-    }
-
-    .topnav a.active {
-        display: none;
-    }
+  .topnav .search-container {
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-left: 0;
   }
+
+  .topnav input[type="text"] {
+    width: 55%;
+    background: #191970;
+    border: none;
+    border-radius: 15px 0 0;
+    margin-top: 40px;
+    padding: 17px;
+    font-size: 17px;
+  }
+
+  .topnav a.active {
+    display: none;
+  }
+}

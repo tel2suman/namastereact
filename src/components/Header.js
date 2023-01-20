@@ -5,7 +5,9 @@ import navlogo from "../../images/navbar-logo.png";
 
 import bootstrapicons from "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
-import { useState } from "react";
+import { useState , useEffect } from "react";
+
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -14,22 +16,22 @@ const Header = () => {
   return (
     <React.Fragment>
       <div className="topnav">
-        <a href="/">
+        <Link to href="/">
           <img src={navlogo} className="logo-image" alt="logo" />
-        </a>
+        </Link>
         <nav>
           <ul className="menu">
             <li>
-              <a href="#!">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#!">About</a>
+              <Link to ="/about">About</Link>
             </li>
             <li>
-              <a href="#!">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <a href="#!">Faq</a>
+              <Link to="/faq">Faq</Link>
             </li>
             <a href="#home" className="active">
               <i className="bi bi-cart"></i>

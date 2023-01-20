@@ -18,6 +18,7 @@ export const RestaurentCard = ({
           <h2>{name}</h2>
           <p>{cuisines.join(",")}</p>
           <h4>{avgRating} stars</h4>
+          
         </div>
       </div>
     </React.Fragment>
