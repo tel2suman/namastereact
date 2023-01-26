@@ -32,7 +32,7 @@ const RestaurentDetails = () => {
 
     return (!restaurantDetails) ? <Shimmer/> : (
         <React.Fragment>
-
+             
             <div className="menu-items">
                 <div>
                     <h1>Restaurent id:{restaurantDetails.id}</h1>
@@ -50,7 +50,7 @@ const RestaurentDetails = () => {
                         {console.log(Object.values(restaurantDetails.menu.items))}
                     <ul>
                         {Object.values(restaurantDetails?.menu?.items).map((item) => (
-                            <li key={item.id}>{item.name}</li>
+                            <li key={item.id}>{item.name},{item.category}</li>
                         ))}
                     </ul>
                 </div>

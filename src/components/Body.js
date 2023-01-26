@@ -68,6 +68,7 @@ const Body = () => {
       </div>
         <div className="restaurant-list">
         {/* {if(filteredRestaurants?.length === 0) return <h4>No Results Found</h4>} */}
+        {/* {console.log(useState())} */}
             {filteredRestaurants.map((restaurant) => {
               return (
                 <React.Fragment>
