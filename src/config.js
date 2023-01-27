@@ -1,5 +1,6 @@
-export const 
-    IMG_CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
+export const IMG_CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
+
+export const FETCH_MENU_DETAILS_URL = "https://www.swiggy.com/dapi/menu/v4/full?lat=22.6107101&lng=88.42706020000001&menuId="
 
 export const RestaurentList = [
     {
@@ -870,5 +871,5 @@ export const RestaurentList = [
       "new": false
       },
       "subtype": "basic"
-    }
+    },
   ];

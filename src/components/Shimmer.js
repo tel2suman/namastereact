@@ -7,7 +7,7 @@ const Shimmer = () => {
     return(
         <React.Fragment>
         <div className="restaurant-list">
-            {   Array(10).fill("").map((e,index)=>
+            {   Array(16).fill("").map((e,index)=>
 
                 <div className="shimmer-card" key={index}>
                     <div className="shimmerBG media"></div>

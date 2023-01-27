@@ -33,6 +33,9 @@ const Header = () => {
             <li>
               <Link to="/faq">Faq</Link>
             </li>
+            <li>
+              <Link to="/instamart">Instamart</Link>
+            </li>
             <a href="#home" className="active">
               <i className="bi bi-cart"></i>
             </a>

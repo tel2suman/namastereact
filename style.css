@@ -305,7 +305,7 @@ input::placeholder {
 
 .fof h1{
   font-size: 50px;
-  display: inline-block;
+  display: block;
   padding-right: 12px;
 }
 
@@ -321,6 +321,9 @@ input::placeholder {
   to{box-shadow: inset -3px 0px 0px transparent;}
 }
 
+.error-img {
+  width: 20%;
+}
 
 @media screen and (max-width: 900px) and (min-width: 300px) {
   .logo-image {

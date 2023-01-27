@@ -11,13 +11,11 @@ import Shimmer from "./Shimmer";
 
 import { Link } from "react-router-dom";
 
+import useOnline from "../utils/useOnline";
 
-function  filterData(searchTxt, restaurants) {
-  const filterData = restaurants.filter ((restaurant) => 
-    restaurant?.data?.name?.toLocaleLowerCase()?.includes(searchTxt.toLocaleLowerCase())
-  );
-  return filterData;
-}
+import errorImage from "../../images/error.png"
+
+import { filterData } from "../utils/helper";
 
 const Body = () => {
 
@@ -44,6 +42,21 @@ const Body = () => {
       setAllRestaurents(json?.data?.cards[2]?.data?.data?.cards)
       setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards)
     }
+
+    const isOnline = useOnline();
+
+    if(!isOnline) {
+        return (
+            <React.Fragment>
+                <div className="main">
+                    <div className="fof">
+                        <img src={errorImage} className="error-img" alt=""/>
+                        <h1>Sorry, You Are Offline, Please Check Your internet Connection</h1>
+                    </div>
+                </div>
+            </React.Fragment>
+          )
+      }
 
    //console.log("render");
 
