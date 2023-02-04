@@ -4,12 +4,18 @@ import navlogo from "../../images/navbar-logo.png";
 
 import bootstrapicons from "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
-import { useState, useEffect } from "react";
+import { useState, useContext } from "react";
 
 import { Link } from "react-router-dom";
 
+import UserContext from "../utils/UserContext";
+
+
 const Header = () => {
+
   const [loggedin, setLoggedin] = useState(false);
+
+  const {user} = useContext(UserContext);
 
   return (
     <React.Fragment>
@@ -64,6 +70,7 @@ const Header = () => {
               Instamart
             </Link>
           </div>
+          <span className="mr-3 font-sans">Hello, <b>{user.name}</b></span>
           <div>
             {loggedin ? (
               <button

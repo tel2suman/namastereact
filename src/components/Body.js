@@ -17,7 +17,7 @@ import errorImage from "../../images/error.png"
 
 import { filterData } from "../utils/helper";
 
-const Body = () => {
+const Body = ({user}) => {
 
   const [allRestaurents, setAllRestaurents] = useState([]);
 
@@ -106,7 +106,7 @@ const Body = () => {
               return (
                 <React.Fragment>
                   <Link to={"/restaurent/" + restaurant.data.id} key={restaurant.data.id}>
-                    <RestaurentCard {...restaurant.data} />
+                    <RestaurentCard {...restaurant.data} user={user} />
                   </Link>
                 </React.Fragment>
               );

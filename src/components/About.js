@@ -9,6 +9,10 @@
 
  import { Component } from "react";
 
+ import { useContext } from "react";
+
+ import UserContext from "../utils/UserContext";
+
     class About extends Component {
 
         constructor(props){
@@ -38,9 +42,9 @@
                       </div>
                       <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
                         <div>
-                          <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-amber-500">
-                            Ad vix debet docendi
-                          </h3>
+                          <UserContext.Consumer>
+                            {({user}) =><h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-amber-500">About {user.name}</h3>}
+                          </UserContext.Consumer>
                           <p className="mt-3 text-lg dark:text-black font-medium">
                             Ne dicta praesent ocurreret has, diam theophrastus
                             at pro. Eos etiam regione ut, persius eripuit quo

@@ -3,13 +3,19 @@ import React from "react";
 
 import { IMG_CDN_URL } from "../config";
 
+import { useContext } from "react";
+
+import UserContext from "../utils/UserContext";
+
 export const RestaurentCard = ({
   cloudinaryImageId, 
   name, 
   cuisines, 
-  avgRating 
+  avgRating,
+  slaString,
+  costForTwoString,
 }) => {
-
+  const {user} = useContext(UserContext);
   return (
     <React.Fragment>
       <div className="card">
@@ -20,6 +26,9 @@ export const RestaurentCard = ({
             <h2 className=" text-xl font-medium">{name}</h2>
             <p className="font-semibold">{cuisines.join(",")}</p>
             <h4 className="font-bold">{avgRating} stars</h4>
+            <span className="font-normal">{slaString}</span>
+            <h5 className="font-normal">{costForTwoString}</h5>
+            <h5 className="font-semibold">{user.name}</h5>
           </div>
         </div>
         </article>

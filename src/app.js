@@ -19,11 +19,15 @@ import Footer from "./components/Footer";
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
+import { useState } from "react";
+
 import Faq from "./components/Faq";
 
 import Profile from "./components/Profile";
 
 import Shimmer from "./components/Shimmer";
+
+import UserContext from "./utils/UserContext";
 
 //import Instamart from "./components/Instamart";
 
@@ -33,11 +37,21 @@ const Instamart = lazy(() => import("./components/Instamart"));
 
 
 const AppLayout = () => {
+
+  const [user, setuser] = useState({
+    name: "Suman Bhattacharjee",
+    email: "suman@gmail.com"
+  });
+
   return (
     <React.Fragment>
+    <UserContext.Provider value={{
+      user:user,
+      }}>
       <Header />
       <Outlet/>
       <Footer />
+      </UserContext.Provider>
     </React.Fragment>
   );
 };
@@ -50,7 +64,10 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Body/>,
+        element: <Body user={{
+          name: "namaste",
+          email: "abc@gmail.com",
+        }}/>,
       },
       {
         path: "/about",

@@ -46,7 +46,7 @@ const RestaurentDetails = () => {
                                     <div className="md:mt-0 text-gray-800 font-semibold text-xl mb-2">
                                         {item.category}
                                     </div>
-                                    <p className="font-semibold">{item.price}</p>
+                                    <p className="font-semibold">₹ {item.price/100}</p>
                                 </div>
                             </div>
                         ))}
