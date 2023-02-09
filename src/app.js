@@ -29,6 +29,12 @@ import Shimmer from "./components/Shimmer";
 
 import UserContext from "./utils/UserContext";
 
+import { Provider } from "react-redux";
+
+import store from "./utils/store";
+
+import Cart from "./components/Cart";
+
 //import Instamart from "./components/Instamart";
 
 
@@ -44,7 +50,7 @@ const AppLayout = () => {
   });
 
   return (
-    <React.Fragment>
+    <Provider store={store}>
     <UserContext.Provider value={{
       user:user,
       }}>
@@ -52,7 +58,7 @@ const AppLayout = () => {
       <Outlet/>
       <Footer />
       </UserContext.Provider>
-    </React.Fragment>
+    </Provider>
   );
 };
 
@@ -64,10 +70,7 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Body user={{
-          name: "namaste",
-          email: "abc@gmail.com",
-        }}/>,
+        element: <Body/>,
       },
       {
         path: "/about",
@@ -86,6 +89,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/faq",
         element: <Faq/>,
+      },
+      {
+        path: "/cart",
+        element: <Cart/>,
       },
       {
         path: "/instamart",

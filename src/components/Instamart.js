@@ -40,7 +40,7 @@
     return(
 
         <React.Fragment>
-            <div>
+            <div className="py-36">
             <h1 className="font-bold p-3 m-3">Instamart</h1>
             
             <Section title={"Instamrt Page"}
